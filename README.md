@@ -1,4 +1,5 @@
 # 以下都是内网学习打的，仅供学习
+poc来自 [https://github.com/tangxiaofeng7/apache-log4j-poc](https://github.com/tangxiaofeng7/apache-log4j-poc)
 ## Apache-Log4j的几种复现方式
 ## 1、使用./tools/JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar
 vps IP 假设为 10.10.10.10
