@@ -21,7 +21,8 @@ ldap://10.10.10.109:1389/m5m8wo
 ![](img/2.png)
 
 ## 2、反弹shell
-试了几个windows的，都是无回显，执行命令磕磕绊绊，最后还是直接反弹了原生shell
+试了几个windows的，都是无回显，执行命令磕磕绊绊，最后还是直接反弹了原生shell,参考[记一次若依cms后台getshell](https://bkfish.gitee.io/2021/06/26/%E8%AE%B0%E4%B8%80%E6%AC%A1%E8%8B%A5%E4%BE%9Dcms%E5%90%8E%E5%8F%B0getshell/)
+
 我测试了一台windows，使用./src/ExecTemplateJDK7.java 修改里面的host和port为要反弹的地址
 然后javac ExecTemplateJDK7.java,生成ExecTemplateJDK7.class
 
